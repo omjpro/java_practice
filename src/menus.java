@@ -18,12 +18,11 @@ class menus {
 			String tmp = scanner.nextLine();
 			menu = Integer.parseInt(tmp);
 			
-			if (menu == 0);{
+			if (menu == 0) {
 				System.out.println("프로그램을 종료합니다.");
-				break;
-						
-			} else if (!(menu>=1 && menu<=3)); {
-					System.out.println("메뉴를 잘못 선택함 (종료 0)");
+				break;	
+			} else if (!(menu>=1 && menu<=3)) {
+				System.out.println("메뉴를 잘못 선택함 (종료 0)");
 				continue;
 			}
 			
@@ -31,8 +30,10 @@ class menus {
 				System.out.println("계산값을 입력해 주세요>");
 				tmp = scanner.nextLine();
 				num = Integer.parseInt(tmp);
+				
 				if (num==0)
 					break;
+				
 				if (num==99)
 					break outer;
 				
@@ -49,7 +50,7 @@ class menus {
 							
 					} // end if switch 
 
-				} // end of if
+				} // end of for
 				
 			} // end of while
 		
